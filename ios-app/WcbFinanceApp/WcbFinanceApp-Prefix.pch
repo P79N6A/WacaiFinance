@@ -1,0 +1,64 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "FinanceCompile.h"
+    #import "FinanceConst.h"
+
+    #import "UserInfo.h"
+
+ 
+    #import "FinanceNotifications.h"
+
+    #import <ReactiveCocoa/ReactiveCocoa.h>
+    #import <IGListKit/IGListDiffable.h>
+    #import <FSNetworkCache.h>
+
+    #define MAS_SHORTHAND
+    #import "Masonry.h"
+    #import "UserActionStatistics.h"
+
+    //Macros
+    #import "FSSizeMacro.h"
+    #import "FSColorMacro.h"
+    #import "FSTextMacro.h"
+    #import "FSFileMacro.h"
+ 
+    #import "FSRequestInterface.h"
+    #import "NSDictionary+FSUtils.h"
+    #import "UIColor+FSUtils.h"
+    #import "NSMutableArray+FSUtils.h"
+    #import "NSArray+FSUtils.h"
+    #import "NSMutableDictionary+FSUtils.h"
+    #import "FSGotoUtility.h"
+    #import "FSRequestManager.h"
+    #import "UIImage+FSUtils.h"
+    #import "NSString+FSUtils.h"
+    #import "CMNSString.h"
+    #import "UIImage+CMUtil.h"
+    #import "UIViewController+CMUtil.h"
+    #import "CMNSDictionary.h"
+    #import "CMCommon.h"
+    #import "CMAppProfile.h"
+    #import "CMUIDisappearView.h"
+    #import "NSURL+CMURL.h"
+    #import "CMSDKManager.h"
+
+
+    #if ENV_TEST || ENV_STAGING
+        #define kTestAppURL
+    #endif
+
+
+#endif

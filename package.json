@@ -1,0 +1,27 @@
+{
+  "name": "WcbFinanceApp",
+  "version": "4.28.28",
+  "boilerplates": {
+    "ios-app": "6.0.1"
+  },
+  "dependencies": {
+    "finance-cube": "^1.0.9",
+    "finance-particle": "^1.0.4",
+    "finance-protocol": "^1.0.2",
+    "sdk-finance-home": "^4.0.1",
+    "sdk-finance-asset": "^3.0.5",
+    "sdk-finance-shelf": "^4.0.3",
+    "sdk-fund-wax": "^4.0.3",
+    "sdk-share": "^1.0.2",
+    "sdk-message": "^1.0.2",
+    "sdk-bbs2": "^9.2.0",
+    "sdk-user": "^3.0.14",
+    "custom-center": "^3.0.0",
+    "finance-aqua": "^2.0.1"
+  },
+  "config": {
+    "wax-cli": "6.1.6",
+    "split-version": "0.47.2"
+  },
+  "patch": 0
+}

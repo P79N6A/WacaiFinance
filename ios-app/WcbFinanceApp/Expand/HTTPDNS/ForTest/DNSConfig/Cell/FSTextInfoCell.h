@@ -1,0 +1,17 @@
+//
+//  FSTextInfoCell.h
+//  HttpdnsDemoExample
+//
+//  Created by 破山 on 2018/11/19.
+//  Copyright © 2018年 Hangzhou Wacai Internet Financial Services CO., LTD. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface FSTextInfoCell : UITableViewCell
+
+- (void)fillContent:(NSString *)content;
+
++ (NSInteger)heightForString:(NSString *)string;
+
+@end

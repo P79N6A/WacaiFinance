@@ -1,0 +1,6 @@
+framework module MGFaceIDLiveDetect {
+  umbrella header "MGFaceIDLiveDetect.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+2019-09-09 15:38:46,101 [wax] debug parse args { _: [ 'install' ], '$0': '../../.wax/cli-v6/6.1.6/bin/wax.js' }
+2019-09-09 15:38:46,104 [wax] info tip 正在使用 6.1.6 版本的 wax
+2019-09-09 15:38:46,187 [wax] debug pipeline *** generate-flat-wax-list ***
+2019-09-09 15:38:46,857 [wax] debug generate-flat-wax-list default 开始执行
+2019-09-09 15:38:47,161 [wax] debug generate-flat-wax-list default 执行完成，耗时：297ms
+2019-09-09 15:38:47,161 [wax] debug pipeline *** install ***
+2019-09-09 15:38:47,161 [wax] debug install ios-app 开始执行
+2019-09-09 15:39:26,139 [wax] debug error stack VError: Cocoapods: pod update 失败: Command failed: /bin/sh -c pod install
+    at Proxy.update (/Users/howie/.wax/bpl/ios-app/6.0.1/node_modules/@wac/wax-utils/src/pod/index.js:43:11)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)

@@ -1,0 +1,64 @@
+workspace: WcbFinanceApp.xcworkspace
+xcodeproj: WcbFinanceApp.xcodeproj
+scheme: WcbFinanceApp
+output_directory: coverage/
+ignore:
+# 第三方代码
+  - Pods/*
+  - WcbFinanceApp/Expand/Tool/iRateHelper/CustomiRate.m
+  - WcbFinanceApp/Expand/Tool/UserAction/UserActionStatisticsForRN.m
+
+# WebView Middleware
+  - WcbFinanceApp/Module/Other/WebView/*
+
+# 静态资源
+  - WcbFinanceApp/Expand/Const/*
+
+
+# Mock文件&调试代码
+  - WcbFinanceApp/Expand/Tool/MockTool/*
+  - WcbFinanceApp/Module/Setting/ViewController/FSDebugSettingsViewController.m
+  - WcbFinanceApp/Module/Setting/ViewController/FSDebugURLOpenViewController.m
+
+# UI文件
+  - WcbFinanceApp/Module/Asset/View/*
+  - WcbFinanceApp/Module/Find/View/*
+  - WcbFinanceApp/Module/NewHome/View/*
+  - WcbFinanceApp/Module/Other/GestureLock/View/*
+  - WcbFinanceApp/Module/Other/Login/View/*
+  - WcbFinanceApp/Module/Other/NewLogin/View/*
+  - WcbFinanceApp/Module/Other/NewUserGuide/FSAssetListGuideView.m
+  - WcbFinanceApp/Module/Other/NewUserGuide/FSHomeGuideView.m
+  - WcbFinanceApp/Module/Other/PopupWindow/FSBasePopupView.m
+  - WcbFinanceApp/Module/Other/Public/View/*
+  - WcbFinanceApp/Module/Other/WelcomeSlides/FSWelcomeSlidesView.m
+  - WcbFinanceApp/Module/Product/View/*
+  - WcbFinanceApp/Module/Setting/View/*
+  - WcbFinanceApp/Module/NewHome/CollectionViewCell/*
+  - WcbFinanceApp/Module/Discovery/CollectionViewCell/*
+  - WcbFinanceApp/Module/Discovery/FSDiscoveryNavView.m
+  - WcbFinanceApp/Module/Discovery/FSDiscoveryTagButton.m
+  - WcbFinanceApp/Module/Discovery/FSDiscoveryTagContainerView.m
+  - WcbFinanceApp/Module/Other/NewUserGuide/FSGuideManager.m
+
+# 已剥离逻辑到VM的VC/只有UI逻辑的VC
+  - WcbFinanceApp/Module/Setting/ViewController/FSBindingInfoViewController.m
+  - WcbFinanceApp/Module/NewHome/FSHomeViewController.m
+  - WcbFinanceApp/Module/Discovery/FSDiscoveryViewController.m
+  - WcbFinanceApp/Module/Other/Login/ViewController/FSBindMobileNumberViewController.m
+  - WcbFinanceApp/Module/Other/Login/ViewController/FSEnterMobileNumberViewController.m
+  - WcbFinanceApp/Module/Other/Login/ViewController/FSWacaiLoginViewController.m
+  - WcbFinanceApp/Module/Other/Login/ViewController/FSSetPasswordViewController.m
+  - WcbFinanceApp/Module/Other/NewLogin/FSNewLoginViewController.m
+  - WcbFinanceApp/Module/Setting/ViewController/FSAccountInfoViewController.m
+  - WcbFinanceApp/Module/Setting/ViewController/FSBindingInfoViewController.m
+  - WcbFinanceApp/Module/Setting/ViewController/FSAccountSettingsViewController.m
+  - WcbFinanceApp/Module/Other/Login/ViewController/FSOriginalLoginViewController.m
+  - WcbFinanceApp/Module/Asset/ViewController/FSAssetViewController.m
+  - WcbFinanceApp/Module/Product/FSProductListViewController.m
+
+  - WcbFinanceApp/Module/Setting/ViewController/FSAboutViewController.m
+  - WcbFinanceApp/Module/Setting/ViewController/FSChangePasswordViewController.m
+  - WcbFinanceApp/Module/Setting/ViewController/FSAccountSecurityViewController.m
+  - WcbFinanceApp/Module/NewHome/SectionController/*
+  - WcbFinanceApp/Module/Discovery/SectionController/*

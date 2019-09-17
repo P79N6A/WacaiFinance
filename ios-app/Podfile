@@ -1,0 +1,137 @@
+require 'json'
+
+podfile_json = JSON.parse(File.read('Podfile.json'))
+
+def merge_deps(podfile_json, ios_tech_deps_json)
+  app_dependencies = podfile_json['targets']['App']['dependencies']
+  return if app_dependencies.nil?
+
+  # 根据 ios_tech_deps_json 内容，移除 app_dependencies 已存在的依赖
+  keys = ios_tech_deps_json.map { |dep| dep['name'] }
+  app_dependencies.delete_if { |dep| keys.include?(dep['name']) }
+
+  app_dependencies.concat(ios_tech_deps_json)
+end
+
+if File.exist?('../.wax/iOS-tech-deps.json')
+  ios_tech_deps_json = JSON.parse(File.read('../.wax/iOS-tech-deps.json'))
+  !ios_tech_deps_json.nil? && merge_deps(podfile_json, ios_tech_deps_json)
+end
+
+# sources
+cocoapods_sources = podfile_json['sources']
+cocoapods_sources.each do |cocoapods_source|
+  source cocoapods_source
+end
+
+# platform
+project_platform = podfile_json['platform']
+if project_platform != nil
+  first_project_platform = project_platform.keys.first
+  platform :"#{first_project_platform}", project_platform[first_project_platform]
+end
+
+# workspace & project
+workspace podfile_json['workspace']
+project podfile_json['project']
+
+# warnings
+warnings = podfile_json['warnings']
+if warnings == true
+  inhibit_all_warnings!
+end
+
+# targets
+def process_targets(project_targets)
+  project_targets.keys.each do |project_target|
+    target_description = project_targets[project_target]
+
+    is_abstract = target_description['abstract']
+    if is_abstract
+      abstract_target project_target do
+        configure_target(target_description)
+      end
+    elsif
+      target project_target do
+        configure_target(target_description)
+      end
+    end
+  end
+end
+
+def configure_target(target_description)
+  # platform
+  project_platform = target_description['platform']
+  if project_platform != nil
+    first_project_platform = project_platform.keys.first
+    platform :"#{first_project_platform}", project_platform[first_project_platform]
+  end
+
+  dependencies = target_description['dependencies']
+
+  if dependencies != nil
+    dependencies.each do |dependency|
+      resolve_dependency(dependency)
+    end
+  end
+
+  inherit = target_description['inherit']
+
+  if inherit != nil
+    inherit! :"#{inherit}"
+  end
+
+  sub_targets = target_description['children']
+
+  if sub_targets != nil
+    process_targets(sub_targets)
+  end
+end
+
+def resolve_dependency(dependency)
+  dependency_name = dependency['name']
+  dependency_path = dependency['path']
+  dependency_git = dependency['git']
+  dependency_branch = dependency['branch']
+  dependency_tag = dependency['tag']
+  dependency_commit = dependency['commit']
+  dependency_version = dependency['version']
+  dependency_subspecs = dependency['subspecs']
+  dependency_configurations = dependency['configurations']
+  dependency_source = dependency['source']
+
+  if dependency_path != nil
+    pod dependency_name, :path => dependency_path, :subspecs => dependency_subspecs, :configurations => dependency_configurations
+  elsif dependency_git != nil
+    if dependency_branch != nil
+      pod dependency_name, :git => dependency_git, :branch => dependency_branch, :subspecs => dependency_subspecs, :configurations => dependency_configurations
+    elsif dependency_tag != nil
+      pod dependency_name, :git => dependency_git, :tag => dependency_tag, :subspecs => dependency_subspecs, :configurations => dependency_configurations
+    elsif dependency_commit != nil
+      pod dependency_name, :git => dependency_git, :commit => dependency_commit, :subspecs => dependency_subspecs, :configurations => dependency_configurations
+    end
+  else
+    if dependency_source != nil
+      pod dependency_name, dependency_version, :subspecs => dependency_subspecs, :configurations => dependency_configurations, :source => dependency_source
+    elsif
+      pod dependency_name, dependency_version, :subspecs => dependency_subspecs, :configurations => dependency_configurations
+    end
+  end
+end
+
+project_targets = podfile_json['targets']
+
+if project_targets != nil
+  process_targets(project_targets)
+end
+
+# hooks
+pre_install do |installer|
+  require File.expand_path('PreInstallHook.rb', './')
+  pre_install_hook(installer)
+end
+
+post_install do |installer|
+  require File.expand_path('PostInstallHook.rb', './')
+  post_install_hook(installer)
+end

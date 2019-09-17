@@ -1,0 +1,42 @@
+{
+    "groups": [
+      {
+        "groudID": "group2",
+        "items": [
+          {
+            "id": "i0",
+            "eventCode": "finance_wcb_accountsetting_customservice_click",
+            "text": "在线客服",
+            "androidURL": "nt://financeapp/customer-center",
+            "iOSURL": "nt://WcbFinanceApp/customer-center"
+          },
+          {
+            "id": "i1",
+            "eventCode": "finance_wcb_accountsetting_feedback_click",
+            "text": "帮助与反馈",
+            "androidURL": "nt://financeapp/help-feedback",
+            "iOSURL": "nt://WcbFinanceApp/help-feedback"
+          }
+        ]
+      },
+      {
+        "groudID": "group3",
+        "items": [
+          {
+            "id": "i0",
+            "eventCode": "finance_wcb_accountsetting_about_click",
+            "text": "关于挖财宝",
+            "androidURL": "nt://financeapp/about-us",
+            "iOSURL": "nt://WcbFinanceApp/about-us"
+          },
+          {
+            "id": "i1",
+            "eventCode": "finance_wcb_accountsetting_knowwacai_click",
+            "text": "了解挖财",
+            "androidURL": "https://8.wacai.com/fcactive/aboutUs/app/index.html?navTitle=%E6%8C%96%E8%B4%A2%EF%BD%9C%E6%88%91%E7%9A%84%E8%B5%84%E4%BA%A7%E7%AE%A1%E5%AE%B6&wacaiclientnav=1",
+            "iOSURL": "https://8.wacai.com/fcactive/aboutUs/app/index.html?navTitle=%E6%8C%96%E8%B4%A2%EF%BD%9C%E6%88%91%E7%9A%84%E8%B5%84%E4%BA%A7%E7%AE%A1%E5%AE%B6&wacaiclientnav=1s"
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,358 @@
+{
+  "sources": [
+    "git@git.caimi-inc.com:client/CocoaPods-Specs.git",
+    "git@git.caimi-inc.com:client/i-New-All-Specs.git",
+    "https://github.com/aliyun/aliyun-specs.git"
+  ],
+  "platform": {
+    "ios": "8.0"
+  },
+  "workspace": "./WcbFinanceApp.xcworkspace",
+  "project": "./WcbFinanceApp.xcodeproj",
+  "targets": {
+    "App": {
+      "abstract": true,
+      "dependencies": [
+        {
+          "name": "CMUIViewController",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMNSURL",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMNSString",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMNSArray",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMNSDictionary",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMUIWebViewController",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMUILabel",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "DZNEmptyDataSet",
+          "version": "~> 1"
+        },
+        {
+          "name": "CMLKDB",
+          "version": "~> 1.0.2"
+        },
+        {
+          "name": "CMUIAlertView",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMBase64",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMSSKeychain",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMMBProgressHUD",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMNSObject",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMHash",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMAssert",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMDevice",
+          "tag": "~> 0.1.4"
+        },
+        {
+          "name": "CMCommon",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMUINavigationBar",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMUIHelper",
+          "version": "~> 0.1.0"
+        },
+        {
+          "name": "CMRegexKitLite",
+          "version": "~> 0.0.1"
+        },
+        {
+          "name": "CMTTTAttributedLabel",
+          "version": "~> 1.0.0"
+        },
+        {
+          "name": "CMMGSwipeTableCell",
+          "version": "~> 1.0.0"
+        },
+        {
+          "name": "CMGTM",
+          "version": "~> 1.0.0"
+        },
+        {
+          "name": "JRSwizzle",
+          "version": "~> 1.0"
+        },
+        {
+          "name": "CMDatabase",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "DFDeviceFingerPrintCollector",
+          "version": "~> 0.1.5"
+        },
+        {
+          "name": "FXBlurView",
+          "version": "~> 1.6.4"
+        },
+        {
+          "name": "iRate",
+          "version": "~> 1.11.6"
+        },
+        {
+          "name": "UITableView+FDTemplateLayoutCell",
+          "version": "~> 1.4"
+        },
+        {
+          "name": "IGListKit",
+          "version": "~> 3.1.1"
+        },
+        {
+          "name": "CMUIConfig",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMCoreContext",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMAppProfile",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMSDKManager",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMNSDate",
+          "version": "~> 0.1"
+        },
+        {
+          "name": "CMService",
+          "version": "~> 1.1.0"
+        },
+        {
+          "name": "CMMonitor",
+          "version": "~> 1.0"
+        },
+        {
+          "name": "WaxDimensionPlugin",
+          "version": "~> 1.0"
+        },
+        {
+          "name": "Masonry",
+          "version": "~> 1.0.2"
+        },
+        {
+          "name": "FXBlurView",
+          "version": "~> 1.6.4"
+        },
+        {
+          "name": "SDWebImage",
+          "version": "~> 3.7.6"
+        },
+        {
+          "name": "MJRefresh",
+          "version": "~> 3.1.15"
+        },
+        {
+          "name": "iRate",
+          "version": "~> 1.11.6"
+        },
+        {
+          "name": "MarqueeLabel",
+          "version": "~> 2.8.0"
+        },
+        {
+          "name": "UITableView+FDTemplateLayoutCell",
+          "version": "~> 1.4"
+        },
+        {
+          "name": "AutoScrollLabel",
+          "version": "~> 0.4.3"
+        },
+        {
+          "name": "AFNetworking",
+          "version": "~> 3.1.0"
+        },
+        {
+          "name": "ReactiveCocoa",
+          "version": "2.5"
+        },
+        {
+          "name": "JSBadgeView",
+          "version": "2.0.0"
+        },
+        {
+          "name": "YYModel",
+          "version": "~> 1.0.4"
+        },
+        {
+          "name": "YYModel",
+          "version": "~> 1.0.4"
+        },
+        {
+          "name": "Aspects",
+          "version": "~> 1.0"
+        },
+        {
+          "name": "RNBridge",
+          "version": "~> 4.0"
+        },
+        {
+          "name": "WCAnalytics",
+          "version": "~> 1.6.0"
+        },
+        {
+          "name": "TPKeyboardAvoiding",
+          "version": "~> 1.3.2"
+        },
+        {
+          "name": "TrinityConfiguration",
+          "version": "~> 0.6"
+        },
+        {
+          "name": "LookinServer",
+          "configurations": "Debug"
+        },
+        {
+          "name": "FLEX",
+          "version": "~> 2.0",
+          "configurations": "Debug"
+        },
+        {
+          "name": "Planck",
+          "version": "~> 1.0"
+        },
+        {
+          "name": "Neutron",
+          "version": "~> 1.0",
+          "source": "git@git.caimi-inc.com:client/i-New-All-Specs.git"
+        },
+        {
+          "name": "React",
+          "version": "0.47.2",
+          "subspecs": [
+            "jschelpers",
+            "cxxreact",
+            "BatchedBridge",
+            "Core",
+            "RCTImage",
+            "RCTNetwork",
+            "RCTText",
+            "RCTWebSocket",
+            "RCTAnimation",
+            "RCTLinkingIOS",
+            "DevSupport"
+          ]
+        },
+        {
+          "name": "NeutronBridge",
+          "version": "~> 2.0"
+        },
+        {
+          "name": "Folly",
+          "source": "git@git.caimi-inc.com:client/i-New-All-Specs.git"
+        },
+        {
+          "name": "CMCommonBusiness",
+          "version": "~> 0.1.0"
+        },
+        {
+          "name": "WMPageController",
+          "version": "2.5.0"
+        },
+        {
+          "name": "XHLaunchAd",
+          "version": "~> 3.9.7"
+        },
+        {
+          "name": "Skyline",
+          "version": "~> 1.0.9"
+        },
+        {
+          "name": "FSThana",
+          "version": "~> 1.0"
+        },
+        {
+          "name": "FSHTTPDNS",
+          "version": "~> 1.0.1"
+        },
+        {
+          "name": "AlicloudHTTPDNS",
+          "version": "1.6.17"
+        },
+        {
+            "name": "FSHiveConfig",
+            "branch": "~> 0.2.2"
+        },
+        {
+            "name": "i-Finance-Library",
+            "version": "~> 0.5.0"
+        },
+        {
+            "name": "PlanckOfflineInit",
+            "git": "git@git.caimi-inc.com:client/PlanckOfflineInitSDK.git",
+            "branch": "cangzhu/upgrade_neutron"
+        },
+        {
+            "name": "H5Offline",
+            "git": "git@git.caimi-inc.com:client/H5OfflineSDK.git",
+            "branch": "cangzhu/upgrade_neutron"
+        },{
+            "name": "WaxResource",
+            "git": "git@git.caimi-inc.com:client/WaxResourceSDK.git",
+            "branch": "cangzhu/upgrade_neutron"
+        },
+        {
+            "name": "AuthSDK",
+            "git": "git@git.caimi-inc.com:client/AuthSDK.git",
+            "branch": "master"
+        }
+      ],
+      "children": {
+        "WcbFinanceApp": {
+          "dependencies": []
+        },
+        "WcbFinanceAppTests": {
+          "inherit": "search_paths",
+          "dependencies": [
+            {
+              "name": "Kiwi"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[
+    {
+      "name": "homeEntrance_unlogged",
+      "type": "key"
+    },
+    {
+      "name": "homeEntrance_logged",
+      "type": "key"
+    },
+    {
+      "name": "http_dns_whitelist",
+      "type": "key"
+    },
+    {
+      "name": "accountSettings_unlogged",
+      "type": "key"
+    },
+    {
+      "name": "accountSettings_logged",
+      "type": "key"
+    },
+    {
+      "name": "signup_config",
+      "type": "key"
+    },
+    {
+        "name": "register_api",
+        "type": "agreement"
+    }
+  ]

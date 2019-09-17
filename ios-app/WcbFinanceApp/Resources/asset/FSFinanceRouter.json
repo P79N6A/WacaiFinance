@@ -1,0 +1,40 @@
+[{
+		"route": "wacaifinance://gotopositiondetail",
+		"viewcontroller": "FSPositionDetailViewController"
+	}, {
+		"route": "wacaifinance://gotolicaijin",
+		"viewcontroller": "FSMoneyViewController"
+ 	}, {
+        "route": "wacaifinance://gotofaq",
+        "viewcontroller": "FSHelpAndFeedbackViewController"
+    },
+    {
+        "route": "wacaifinance://gotodiscoverset",
+        "viewcontroller": "FSDiscoverSettingsViewController"
+    },
+    {
+       "route": "wacaifinance://tradehistory",
+       "viewcontroller": "FSTradeListViewController"
+    },
+    {
+        "route": "wacaifinance://moresettings",
+        "viewcontroller": "FSMoreSettingsViewController"
+    },
+    {
+        "route": "wacaifinance://accountInfo",
+        "viewcontroller": "FSAccountInfoViewController"
+    },
+    {
+        "route": "wacaifinance://accountSettings",
+        "viewcontroller": "FSAccountSettingsViewController"
+    },
+    {
+        "route": "wacaifinance://passwordManage",
+        "viewcontroller": "FSPasswordManageViewController"
+    },
+    {
+        "route": "wacaifinance://contactUs",
+        "viewcontroller": "FSAboutViewController"
+    }
+ 
+]

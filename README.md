@@ -1,1 +1,1 @@
-# WacaiFinance
+## Readme to be finished

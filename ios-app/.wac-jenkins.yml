@@ -1,0 +1,50 @@
+display_name: WcbFinanceApp
+scheme: WcbFinanceApp
+app_name: WcbFinanceApp
+workspace: "WcbFinanceApp.xcworkspace"
+info_plist: "WcbFinanceApp/Info.plist"
+configurations:
+  - name: AppStore-Production
+    bundle_id: com.hangzhoucaimi.finance
+    code_sign: "iPhone Distribution: Hangzhou Wacai Internet Financial Service Co.,Ltd (YCG23Z55SZ)"
+    xcode_build_config: Release
+    profile_specifier: "Wacai_FinanceApp_AppStore"
+    team_id: YCG23Z55SZ
+
+  - name: In-House-Production
+    bundle_id: com.hangzhoucaimi.financeinhouse
+    code_sign: "iPhone Distribution: Hangzhou Caimi Technology Co., Ltd."
+    xcode_build_config: Release
+    profile_specifier: "FinanceInhouse"
+    team_id: WF2H87TG3E
+
+  - name: In-House-Test
+    bundle_id: com.hangzhoucaimi.financeinhouse
+    code_sign: "iPhone Distribution: Hangzhou Caimi Technology Co., Ltd."
+    xcode_build_config: Test
+    env:
+        ENV_TEST: 1
+    profile_specifier: "FinanceInhouse"
+    team_id: WF2H87TG3E
+
+
+  - name: Ad-Hoc-Production
+    bundle_id: com.hangzhoucaimi.finance
+    code_sign: "iPhone Distribution: Hangzhou Wacai Internet Financial Service Co.,Ltd (YCG23Z55SZ)"
+    xcode_build_config: Release
+    profile_specifier: "Wacai_FinanceApp_AdHoc"
+    team_id: YCG23Z55SZ
+
+  - name: Ad-Hoc-Test
+    bundle_id: com.hangzhoucaimi.finance
+    code_sign: "iPhone Distribution: Hangzhou Wacai Internet Financial Service Co.,Ltd (YCG23Z55SZ)"
+    xcode_build_config: Test
+    env:
+        ENV_TEST: 1
+    profile_specifier: "Wacai_FinanceApp_AdHoc"
+    team_id: YCG23Z55SZ
+
+
+# 打包配置请参考：
+# http://git.caimi-inc.com/client/i-All-JenkinsScript
+# http://git.caimi-inc.com/client/i-All-JenkinsScript/issues/43

@@ -1,0 +1,118 @@
+{
+  "groups": [
+    {
+      "groudID": "group0",
+      "items": [
+        {
+          "id": "bindinfo-0",
+          "eventCode": "finance_wcb_accountsetting_bind_click",
+          "text": "绑定信息",
+          "androidURL": "nt://financeapp/binding-info",
+          "iOSURL": "nt://WcbFinanceApp/binding-info",
+          "desc": "未实名认证",
+          "descColor": "#d94b40"
+        },
+        {
+          "id": "bindinfo-1",
+          "eventCode": "finance_wcb_accountsetting_bind_click",
+          "text": "绑定信息",
+          "androidURL": "nt://financeapp/binding-info",
+          "iOSURL": "nt://WcbFinanceApp/binding-info",
+          "desc": "未绑定银行卡",
+          "descColor": "#d94b40"
+        },
+        {
+          "id": "bindinfo-2",
+          "eventCode": "finance_wcb_accountsetting_bind_click",
+          "text": "绑定信息",
+          "desc": "银行卡、手机、实名认证",
+          "descColor": "#aaa",
+          "androidURL": "nt://financeapp/binding-info",
+          "iOSURL": "nt://WcbFinanceApp/binding-info"
+        },
+        {
+          "id": "bindinfo-3",
+          "eventCode": "finance_wcb_accountsetting_bind_click",
+          "text": "绑定信息",
+          "desc": "",
+          "descColor": "#aaa",
+          "androidURL": "nt://financeapp/binding-info",
+          "iOSURL": "nt://WcbFinanceApp/binding-info"
+        },
+        {
+          "id": "i4",
+          "eventCode": "finance_wcb_accountsetting_investmentstyle_click",
+          "text": "风险评测",
+          "androidURL": "https://8.wacai.com/fcactive/term/risk/app/index.html",
+          "iOSURL": "https://8.wacai.com/fcactive/term/risk/app/index.html"
+        }
+      ]
+    },
+    {
+      "groudID": "group1",
+      "items": [
+        {
+          "id": "i0",
+          "eventCode": "finance_wcb_accountsetting_password_click",
+          "text": "密码管理",
+          "androidURL": "nt://financeapp/password-management",
+          "iOSURL": "nt://WcbFinanceApp/password-management",
+          "desc": "挖财宝令、手势密码、登录密码",
+          "descColor": "#aaa"
+        }
+      ]
+    },
+    {
+      "groudID": "group2",
+      "items": [
+        {
+          "id": "i0",
+          "eventCode": "finance_wcb_accountsetting_customservice_click",
+          "text": "在线客服",
+          "androidURL": "nt://financeapp/customer-center",
+          "iOSURL": "nt://WcbFinanceApp/customer-center"
+        },
+        {
+          "id": "i1",
+          "eventCode": "finance_wcb_accountsetting_feedback_click",
+          "text": "帮助与反馈",
+          "androidURL": "nt://financeapp/help-feedback",
+          "iOSURL": "nt://WcbFinanceApp/help-feedback"
+        }
+      ]
+    },
+    {
+      "groudID": "group3",
+      "items": [
+        {
+          "id": "i0",
+          "eventCode": "finance_wcb_accountsetting_about_click",
+          "text": "关于挖财宝",
+          "androidURL": "nt://financeapp/about-us",
+          "iOSURL": "nt://WcbFinanceApp/about-us"
+        },
+        {
+          "id": "i1",
+          "eventCode": "finance_wcb_accountsetting_knowwacai_click",
+          "text": "了解挖财",
+          "androidURL": "https://8.wacai.com/fcactive/aboutUs/app/index.html?navTitle=%E6%8C%96%E8%B4%A2%EF%BD%9C%E6%88%91%E7%9A%84%E8%B5%84%E4%BA%A7%E7%AE%A1%E5%AE%B6&wacaiclientnav=1",
+          "iOSURL": "https://8.wacai.com/fcactive/aboutUs/app/index.html?navTitle=%E6%8C%96%E8%B4%A2%EF%BD%9C%E6%88%91%E7%9A%84%E8%B5%84%E4%BA%A7%E7%AE%A1%E5%AE%B6&wacaiclientnav=1s"
+        }
+      ]
+    },
+    {
+      "groudID": "group4",
+      "items": [
+        {
+          "id": "i0",
+          "eventCode": "finance_wcb_accountsetting_more_click",
+          "text": "更多",
+          "desc": "法律协议、精选发现提醒",
+          "descColor": "#aaa",
+          "androidURL": "nt://financeapp/more-settings",
+          "iOSURL": "nt://WcbFinanceApp/more-settings"
+        }
+      ]
+    }
+  ]
+}
